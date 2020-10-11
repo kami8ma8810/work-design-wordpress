@@ -10,14 +10,14 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 </head>
-<body>
+<body <?php body_class(); ?>>
     <header class="header">
         <div class="header_inner">
             <div class="header_logo">
-                <h1><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo@2x.png" alt="BISTRO CALME"></a></h1>
+                <h1><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo@2x.png" alt="BISTRO CALME"></a></h1>
             </div>
 
-            <div class="header_desc"><p>サイトのキャッチフレーズ</p></div>
+            <div class="header_desc"><p><?php bloginfo('description'); ?></p></div>
 
             <form class="header_search">
                 <input type="text" placeholder="キーワードを入力">
@@ -28,7 +28,7 @@
         <div class="header_links">
             <nav class="gnav">
                 <ul class="">
-                    <li><a href="#">HOME</a></li>
+                    <li><a href="<?php echo home_url(); ?>">HOME</a></li>
                     <li><a href="#">わたしたちについて</a></li>
                     <li><a href="#">アクセス</a></li>
                     <li><a href="#">最新情報</a></li>
