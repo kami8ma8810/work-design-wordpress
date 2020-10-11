@@ -8,7 +8,7 @@
     <link href="<?php echo get_template_directory_uri(); ?>/assets/css/styles.min.css" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="./assets/js/main.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 </head>
 <body>
     <header class="header">
@@ -53,9 +53,9 @@
     </header>
 
     <div class="jumbotron">
-        <div class="jumbotron_item" style="background-image: url('./assets/img/home/jumbotron-1@2x.jpg')"></div>
-        <div class="jumbotron_item" style="background-image: url('./assets/img/home/jumbotron-2@2x.jpg')"></div>
-        <div class="jumbotron_item" style="background-image: url('./assets/img/home/jumbotron-3@2x.jpg')"></div>
+        <div class="jumbotron_item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/home/jumbotron-1@2x.jpg')"></div>
+        <div class="jumbotron_item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/home/jumbotron-2@2x.jpg')"></div>
+        <div class="jumbotron_item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/home/jumbotron-3@2x.jpg')"></div>
     </div>
 
     <section class="sec">
@@ -144,7 +144,7 @@
 
             <div class="row">
                 <div class="col-md-6">
-                    <a href="#" class="bnr" style="background-image: url('./assets/img/home/bnr_about@2x.jpg')">
+                    <a href="#" class="bnr" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/home/bnr_about@2x.jpg')">
                         <div class="bnr_inner">
                             わたしたちについて<span>ABOUT</span>
                         </div>
@@ -152,7 +152,7 @@
                 </div>
 
                 <div class="col-md-6">
-                    <a href="#" class="bnr" style="background-image: url('./assets/img/home/bnr_access@2x.jpg')">
+                    <a href="#" class="bnr" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/home/bnr_access@2x.jpg')">
                         <div class="bnr_inner">
                             アクセス<span>ACCESS</span>
                         </div>
