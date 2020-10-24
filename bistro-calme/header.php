@@ -9,9 +9,11 @@
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
+  <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
+  <?php wp_body_open(); ?>
   <header class="header">
     <div class="header_inner">
       <div class="header_logo">
