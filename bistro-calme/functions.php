@@ -1,4 +1,7 @@
 <?php
+/**
+ * タイトルを出力する
+ */
 add_theme_support('title-tag');
 add_filter('document_title_separator','my_document_title_separator');
 function my_document_title_separator($separator){
@@ -13,3 +16,7 @@ function my_document_title_parts($title){
   }
   return $title;
 }
+/**
+ * アイキャッチ画像を使用可能にする
+ */
+add_theme_support('post-thumbnails');
